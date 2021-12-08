@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ranking</title>
+
+    <!-- Vinculacion de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Vinculacion Externa (recomendada) -->
+    <link rel='stylesheet' media='screen' href='css/estilos.css'>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar__container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo.png" alt="" width="50">
+                </a>
+
+                <a class="navbar-brand" href="index.html">Movie Ratings</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="carga.html">Carga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consulta.html">Consulta</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gestion.html">Gestion</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="main_media">
+
+        <div>
+            <h1 class="titulos_secciones">Probando hacer distintas cosas con JS</h1>
+        </div>
+
+        <div class="card-group align-middle my-5">
+            <div class="card rounded border-1">
+                <div class="card-body">
+                    <h5 class="card-title" id="mouseMoveCarga">Carga de Datos</h5>
+                    <p class="card-text">Primera parte del curso, donde se pueden cargar Datos de Peliculas como si fuera una DB. Se guardan en
+                        Storage para Practicar y permite visualizar lo guardado
+                    </p>
+                    <p class="card-text"><small class="text-muted">Se usan: Arrays - Objetos - LocalStorage - Jquery - DOM - Animaciones</small></p>
+                </div>
+                <a class="text-decoration-none  text-center" href="carga.html">
+                    <img src="./images/carga.png" alt="icon_carga" class="cards__icons">
+                </a>
+            </div>
+
+            
+            <div class="card rounded border-1">
+                <div class="card-body">
+                    <h5 class="card-title" id="mouseMoveConsulta">Consulta de Datos</h5>
+                    <p class="card-text">Se realiza consulta a API con informacion de peliculas / series / juegos. Devuelve aquellas que se ajustan a la busqueda y visualiza rating de mas de un lugar. Se guarda informacion en LocalStorage para escalar otras funcionalidades.</p>
+                    <p class="card-text"><small class="text-muted">Se usan: Arrays - Objetos - LocalStorage - Jquery - APIs - AJAX</small></p>
+                </div>
+                <a class="text-decoration-none  text-center" href="consulta.html">
+                    <img src="./images/consulta.png" alt="icon_consulta" class="cards__icons">
+                </a>
+            </div>
+
+            <div class="card rounded border-1">
+                <div class="card-body">
+                    <h5 class="card-title" id="mouseMoveContacto">Gestion DB</h5>
+                    <p class="card-text">Seccion para consultar lo que se guardo en Storage, simulando DB y borrarlo (total o parcialmente)
+                    </p>
+                    <p class="card-text"><small class="text-muted">Se usan: Arrays - Objetos - LocalStorage</small></p>
+                </div>
+                <a class="text-decoration-none  text-center" href="gestion.html">
+                <img src="./images/contacto.png" alt="icon_contacto" class="cards__icons">
+            </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer v20210923 ############################################################################### -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Social media -->
+        <div
+            class="d-flex justify-content-center align-items-center mt-4 justify-content-lg-between border-bottom footer__redes">
+            <!-- A la izquierda del footer pongo el disclaimer de la pagina -->
+            <div class="me-5 d-none d-lg-block">
+                <span>© 2021 - Hecho con cariño por <a class="text-decoration-none"
+                        href="https://www.linkedin.com/in/luismiguelgraglia/" target="_blank">LMG</a> - Buenos Aires
+                    - Argentina</span>
+            </div>
+
+            <!-- A la derecha del footer pongo los iconos de Social Media-->
+            <div class="me-4 text-reset ">
+                <a class="text-decoration-none" href="http:\\www.facebook.com" target="_blank">
+
+                    <img src="./images/icons/icon_facebook.svg" alt="icon_facebook" class="footer__icons">
+                </a>
+                <a class="text-decoration-none" href="http:\\www.twitter.com" target="_blank" class="text-reset">
+                    <img src="./images/icons/icon_twitter.svg" alt="icon_twitter" class="footer__icons">
+                </a>
+                <a class="text-decoration-none" href="http:\\www.instagram.com" target="_blank">
+                    <img src="./images/icons/icon_instagram.svg" alt="icon_instagram" class="footer__icons">
+                </a>
+                <a class="text-decoration-none" href="http:\\www.linkedin.com" target="_blank">
+                    <img src="./images/icons/icon_linkedin.svg" alt="icon_linkedin" class="footer__icons">
+                </a>
+                <a class="text-decoration-none" id="wsp_direct"
+                    href="https://api.whatsapp.com/send?phone=numero&text=mensaje" target="_blank">
+                    <img src="./images/icons/icon_whatsapp.svg" alt="icon_whatsapp" class="footer__icons">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/eventos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

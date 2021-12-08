@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head V20210822 ##################################################################################-->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Movie | Contacto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- HOJA DE ESTILO CSS -->
+    <!-- Vinculacion de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Vinculacion Externa (recomendada) -->
+    <link rel='stylesheet' media='screen' href='css/estilos.css'>
+
+    <!-- Vinculacion a Google Fonts y seleccion de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap"
+        rel="stylesheet">
+
+    <meta name="keywords" content="ambientacion, produccion, series, decorados, contacto, daniela carranza">
+    <meta name="description" content="Contactame por cualquiera de mis redes para trabajar conmigo o por mis servicios">
+
+
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <!-- Header V20210824 #########################################################################-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar__container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/movie_logo.svg" alt="" width="50">
+                </a>
+    
+                <a class="navbar-brand" href="index.html">Movie Ranking</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="carga.html">Carga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consulta.html">Consulta</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+    
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main_media">
+        <div>
+            <div>
+                <h1 class="titulos_secciones">Contame más de vos</h1>
+            </div>
+
+            <form action="">
+                <div class="row contacto__container">
+                    <div class="contacto__formulario col-12 col-md-6">
+                        <div class="form-floating mb-1">
+                            <input type="text" class="form-control" id="contacto_nombre">
+                            <label for="contacto_nombre" class="floatingInput">Nombre y Apellido:</label>
+                        </div>
+
+                        <div class="form-floating mb-1">
+                            <input type="mail" class="form-control" id="contacto_mail">
+                            <label for="contacto_mail" class="floatingInput">Correo:</label>
+                        </div>
+
+                        <div class="form-floating mb-1">
+                            <input type="text" class="form-control" id="contacto_telefono">
+                            <label for="contacto_telefono" class="floatingInput">Teléfono:</label>
+                        </div>
+
+                        <div class="form-floating mb-1">
+                            <input type="text" class="form-control" id="contacto_empresa">
+                            <label for="contacto_empresa" class="floatingInput">Nombre empresa:</label>
+                        </div>
+
+                        <div class="form-floating mb-1">
+                            <select class="form-select" name="contacto_tipo" id="contacto_tipo">
+                                <option selected value="consulta">Consultas</option>
+                                <option value="oferta_laboral">Oferta Laboral</option>
+                                <option value="oferta_proveedor">Oferta Proveedor</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                            <label for="contacto_tipo" class="floatingSelect">Tipo de Contacto:</label>
+                        </div>
+
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" name="contacto_conocido"
+                                id="contacto_conocido" value="si">
+                            <label for="contacto_conocido" class="form-check-label">¿Ya nos conocemos?</label>
+                        </div>
+
+                        <div>
+                            <label class="mb-1" for="contacto_origen">¿Sos del...?</label>
+                            <input type="radio" id="contacto_trabajo" name="contacto_origen" value="trabajo">Trabajo
+                            <input type="radio" id="contacto_estudio" name="contacto_origen" value="estudio">Estudio
+                            <input type="radio" id="contacto_otros" name="contacto_origen" value="otros"> Otro Lado
+                        </div>
+
+
+                    </div>
+
+                    <div class="contacto__comentario col-12 col-md-6">
+                        <div>
+                            <textarea placeholder="Escribime acá lo que me quieras contar, preguntar, sugerir, avisar!" name="contacto_comentario"
+                                id="contacto_comentario" class="form-control contacto__comentariosize"></textarea>
+                            <label for="contacto_comentario" class="form-label"></label>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-block contacto__botones">
+                        <input class="btn btn-primary contacto__botoncolor" type="reset" value="Limpiar Formulario">
+                        <button class="btn btn-primary contacto__botoncolor" type="submit">Enviar</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer v20210923 ############################################################################### -->
+    <div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Social media -->
+            <div
+                class="d-flex justify-content-center align-items-center mt-4 justify-content-lg-between border-bottom footer__redes">
+                <!-- A la izquierda del footer pongo el disclaimer de la pagina -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>© 2021 - Hecho con cariño por <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/luismiguelgraglia/" target="_blank">LMG</a> - Buenos Aires
+                        - Argentina</span>
+                </div>
+
+                <!-- A la derecha del footer pongo los iconos de Social Media-->
+                <div class="me-4 text-reset ">
+                    <a class="text-decoration-none" href="http:\\www.facebook.com" target="_blank">
+
+                        <img src="./images/icons/icon_facebook.svg" alt="icon_facebook" class="footer__icons">
+                    </a>
+                    <a class="text-decoration-none" href="http:\\www.twitter.com" target="_blank" class="text-reset">
+                        <img src="./images/icons/icon_twitter.svg" alt="icon_twitter" class="footer__icons">
+                    </a>
+                    <a class="text-decoration-none" href="http:\\www.instagram.com" target="_blank">
+                        <img src="./images/icons/icon_instagram.svg" alt="icon_instagram" class="footer__icons">
+                    </a>
+                    <a class="text-decoration-none" href="http:\\www.linkedin.com" target="_blank">
+                        <img src="./images/icons/icon_linkedin.svg" alt="icon_linkedin" class="footer__icons">
+                    </a>
+                    <a class="text-decoration-none" id="wsp_direct"
+                        href="https://api.whatsapp.com/send?phone=numero&text=mensaje" target="_blank">
+                        <img src="./images/icons/icon_whatsapp.svg" alt="icon_whatsapp" class="footer__icons">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Vinculacion Js de Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
